@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}Search{% endblock %}
+
+{% block content %}
+    <h1>Search Posts</h1>
+    <form method="get">
+        <input type="text" name="q" value="{{ query }}" placeholder="Search for posts">
+        <button type="submit">Search</button>
+    </form>
+    <ul>
+        {% if results %}
+            {% for post in results %}
+                <li>{{ post.title }}</li>
+            {% endfor %}
+        {% else %}
+            <li>No results found</li>
+        {% endif %}
+    </ul>
+{% endblock %}

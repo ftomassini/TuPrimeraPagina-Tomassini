@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}Éxito{% endblock %}
+
+{% block content %}
+    <div class="success">
+        <h1>¡Operación exitosa!</h1>
+        <p>{{ message }}</p>
+        <a href="{% url 'home' %}" style="text-decoration: none; color: #4CAF50; font-weight: bold;">Volver al inicio</a>
+    </div>
+{% endblock %}

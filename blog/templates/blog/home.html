@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <h1>Bienvenido a Mi Blog</h1>
+    <img src="https://www.shutterstock.com/image-vector/long-shelf-standing-lying-books-260nw-2209864033.jpg" alt="Imagen del Blog" style="width: 100%; border-radius: 8px;">
+    <p>Explora nuestras publicaciones, autores y editoriales.</p>
+    <h2>Publicaciones recientes</h2>
+    <ul>
+        {% for post in posts %}
+            <li><strong>{{ post.title }}</strong> por {{ post.author.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
