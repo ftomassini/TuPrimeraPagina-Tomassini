@@ -20,3 +20,11 @@
 5. Inicia el servidor de desarrollo:
 
 `python manage.py runserver`
+
+6. Ingresa a la web:
+
+Ingresa al navegador a la dirección: http://127.0.0.1:8000/
+
+7. Ingresar al panel admin:
+
+Ingresa al navegador a la dirección: http://127.0.0.1:8000/admin
